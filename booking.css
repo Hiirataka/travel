@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+}
+
+body {
+  padding-inline: 13vw;
+}
+
+header {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head-img {
+  width: 46vw; 
+  height: 100%;
+}
+
+.button {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 300px;
+  padding-left: 15px;
+}
+
+.button button:hover {
+  background-color: rgba(194, 252, 106, 0.568);
+  transition: ease-in-out 0.2s;
+}
+
+.button button::after {
+  background-color: #2d65ce;
+}
+
+.btn-book button {
+  padding-inline: 17px;
+  padding-block: 6px;
+  border: 1px solid rgba(130, 188, 42, 0.654);
+  border-radius: 4px;
+  background-color: white;
+}
+
+.time img {
+  width: 20px;
+}
+
+.day, .place {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.time {
+  display: flex;
+  gap: 70px;
+  padding-left: 15px;
+}
+
+.booking-btn {
+  display: flex;  
+  align-items: center; 
+  justify-content: center;
+}
+
+.booking-btn button {
+  background-color: #3B7EF9;
+  border: none;
+  color: white;
+  font-size: 16px;
+}
+
+.booking-btn button:hover {
+  background-color: #2d65ce;
+  transition: ease-in-out 0.2s;
+}
+
+@media screen and (max-width: 1355px) {
+  body {
+    padding-inline: 9vw;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  header {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .head-img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .time {
+    gap: 40px;
+  }
+}
